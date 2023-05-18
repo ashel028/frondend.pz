@@ -1,4 +1,10 @@
 body {background-color: ;}
+.colors {color:silver}
+li {color: silver}
+p {color: #81B7E2}
+
+
+
 
 body{background-image: url(../imagenes/queso.jpg);
     background-repeat: no-repeat;
