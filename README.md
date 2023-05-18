@@ -1,11 +1,9 @@
-# frondend.pz
-Es mi pagina sobre la pizza Argentina y demas pizzas
 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
 
-    
+
   </head><h1 style="color:#C67D04">CAMPEONES DEL MUNDO</h1>
   <body bgcolor="#90CAF9">
     <h1 style="color:#289AD4">receta interesante sobre la pizza campeona del mundo</h1>
@@ -18,7 +16,6 @@ Es mi pagina sobre la pizza Argentina y demas pizzas
       <br>
       </section>
 
-     
       <li>Historia de la Pizza Argentina</li>
       <li>La pizza llega a la Argentina en la segunda mitad del siglo XIX con la ola de inmigración que convirtió a las etnias italianas en mayoritarias dentro de la población argentina. Su punto de aparición fue el barrio de La Boca, en Buenos Aires, de abrumadora mayoría genovesa.</li>
     </ul>
@@ -35,7 +32,7 @@ Es mi pagina sobre la pizza Argentina y demas pizzas
       <br>
 
   	</section>
-          
+
     <main>
 	<section>
 		<h2 style="color:#044CC6">Ingredientes</h2>
