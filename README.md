@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="./css/estilo.css">
 
   </head><h1 style="color:#C67D04">CAMPEONES DEL MUNDO</h1>
-  <body bgcolor="#90CAF9">
+
     <h1 style="color:#289AD4">receta interesante sobre la pizza campeona del mundo</h1>
     <br>
     <ul>
@@ -73,3 +73,4 @@
     <video controls poster="./pagina html/./video/video1.avi">
   <br>
     </body>
+
