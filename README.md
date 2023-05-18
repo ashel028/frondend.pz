@@ -1,7 +1,6 @@
 # frondend.pz
 Es mi pagina sobre la pizza Argentina y demas pizzas
 
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -19,7 +18,7 @@ Es mi pagina sobre la pizza Argentina y demas pizzas
       <br>
       </section>
 
-      </picture>
+     
       <li>Historia de la Pizza Argentina</li>
       <li>La pizza llega a la Argentina en la segunda mitad del siglo XIX con la ola de inmigración que convirtió a las etnias italianas en mayoritarias dentro de la población argentina. Su punto de aparición fue el barrio de La Boca, en Buenos Aires, de abrumadora mayoría genovesa.</li>
     </ul>
