@@ -15,10 +15,14 @@
       <a href="https://es.wikipedia.org/wiki/Pizza_en_Argentina">"info de pizzas"</a>
       <br>
       </section>
+<header>
+  
+  <li>Historia de la Pizza Argentina</li>
+  <li>La pizza llega a la Argentina en la segunda mitad del siglo XIX con la ola de inmigración que convirtió a las etnias italianas en mayoritarias dentro de la población argentina. Su punto de aparición fue el barrio de La Boca, en Buenos Aires, de abrumadora mayoría genovesa.</li>
+</ul>
 
-      <li>Historia de la Pizza Argentina</li>
-      <li>La pizza llega a la Argentina en la segunda mitad del siglo XIX con la ola de inmigración que convirtió a las etnias italianas en mayoritarias dentro de la población argentina. Su punto de aparición fue el barrio de La Boca, en Buenos Aires, de abrumadora mayoría genovesa.</li>
-    </ul>
+</header>
+
 
     <br>
   "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26261.431998867385!2d-58.382295025149226!3d-34.637551358612974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b0bf5ff0a5%3A0x3858a68c0d7599a0!2sLa%20Boca%2C%20CABA!5e0!3m2!1ses!2sar!4v1682880831756!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -37,7 +41,7 @@
 	<section>
 		<h2 style="color:#044CC6">Ingredientes</h2>
 		<ul>
-			<li>500 gramos de harina de trigo</li>
+			<li class="colors">500 gramos de harina de trigo</li>
 			<li>250 ml de agua tibia</li>
 			<li>25 gramos de levadura</li>
 			<li>1 cucharada de sal</li>
@@ -73,5 +77,4 @@
     <video controls poster="./pagina html/./video/video1.avi">
   <br>
     </body>
-    
 
