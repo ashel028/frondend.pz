@@ -17,28 +17,69 @@ body {
     background: white url(log.gif) no.repeat fixed 50% 50%;
   }
 
- main{background-color: #a04f4f;
-        padding: 10px;
-        margin:50px;
-        border:3PX solid;
+ header {background-color: #a04f4f;
+   padding: 30px;
+     margin: 50px;
+       width: 70%;
+       display: flex;
+       justify-content: space-around;
       }
 
 
-  .encabezadoingredientes{background-color: #cd6e6e;
+
+footer {background-color: #a04f4f;
+    padding: 30px;
+      margin: 50px;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+       }
+
+.encabezadoimg{display: flex;
+  background-color: #a04f4f;
   padding: 30px;
     margin: 50px;
       width: 25%;
+}
 
+  .encabezadoingredientes{
+    display: flex; justify-content:center;
+    background-color: #cd6e6e;
+  padding: 30px;
+    margin: 50px;
+      width: 25%;
       }
-    .encabezadopreparacion{background-color: #cd6e6e;
+
+    .encabezadopreparacion{display:flex;
+      background-color: #cd6e6e;
        padding: 30px;
         margin: 50px;
           width: 25%;
+
           }
-      .encabezadovideos{background-color: #cd6e6e;
+
+      .encabezadovideos{display: flex;
+        background-color: #cd6e6e;
           padding: 30px;
             margin: 50px;
               width: 35%;
               }
 
-            
+        .encabezadomaps{ display: flex;
+                justify-content:center;
+                width: 25%;
+                height: 95%;
+              }
+
+              .encabezadologo{ display: flex;
+                width: 25%;
+                height: 95%;
+              }
+
+                .encabezadodirecciones{
+                  display: flex;
+                  background-color: #cd6e6e;
+                     padding: 30px;
+                      margin: 50px;
+                        width: 25%;
+                }
