@@ -11,18 +11,38 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50% ;
+
+
   }
 
   body {
     background: white url(log.gif) no.repeat fixed 50% 50%;
   }
 
- header {background-color: #a04f4f;
+ header {background-color: #78281F
    padding: 30px;
      margin: 50px;
        width: 70%;
        display: flex;
+       flex-direction: row;
+       align-items: center;
        justify-content: space-around;
+
+      }
+
+      .encabezadologo{
+        background-color: #78281F
+        display: flex;
+        width: 25%;
+        height: 95%;
+      }
+
+      .encabezadotitulo{ display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color:#a04f4f;
+        margin: 25px;
       }
 
 
@@ -32,14 +52,16 @@ footer {background-color: #a04f4f;
       margin: 50px;
         width: 70%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-around;
-       }
+      }
 
-.encabezadoimg{display: flex;
-  background-color: #a04f4f;
-  padding: 30px;
-    margin: 50px;
-      width: 25%;
+ .encabezadoimg{
+   display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
 }
 
   .encabezadoingredientes{
@@ -59,25 +81,26 @@ footer {background-color: #a04f4f;
           }
 
       .encabezadovideos{display: flex;
+        flex-direction:center;
+justify-content: center;
         background-color: #cd6e6e;
           padding: 30px;
-            margin: 50px;
+            margin: 5px;
               width: 35%;
               }
 
-        .encabezadomaps{ display: flex;
-                justify-content:center;
-                width: 25%;
-                height: 95%;
+        .encabezadomaps{
+          display: flex;
+          justify-content: center;
               }
 
-              .encabezadologo{ display: flex;
-                width: 25%;
-                height: 95%;
-              }
+
 
                 .encabezadodirecciones{
                   display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
                   background-color: #cd6e6e;
                      padding: 30px;
                       margin: 50px;
