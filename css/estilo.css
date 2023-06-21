@@ -1,6 +1,7 @@
-body {
-  background-color: ;}
-li{color:silver;}
+
+li{color:silver;
+font-family: "apple";
+}
 .colors {color:silver;}
 p {color: #81B7E2;}
 
@@ -16,13 +17,12 @@ body {
   }
 
   body {
-    background: white url(log.gif) no.repeat fixed 50% 50%;
+    background: white url(log.gif)
+    no.repeat fixed 50% 50%;
   }
 
- header {background-color: #78281F
-   padding: 30px;
-     margin: 50px;
-       width: 70%;
+ header {
+       width: 70vw;
        display: flex;
        flex-direction: row;
        align-items: center;
@@ -30,79 +30,122 @@ body {
 
       }
 
+      @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+      @font-face {
+        font-family: "apple";
+        src: url("../fuentes/ARLRDBD.ttf")
+        format("truetype");
+
+        font-family: "tit";
+        src: url("../fuentes/COOPBL.ttf")
+        format("truetype");
+      }
+
+
+      a:active{color: yellow;}
+      a:hover{color: green;}
+
+
       .encabezadologo{
-        background-color: #78281F
+        font-family: "tit";
+        background-color: #8b0000;
         display: flex;
+        justify-content: center;
         width: 25%;
+        height: 75%;
+        margin: 3%;
+      }
+
+      .encabezadotitulo{
+        font-family: 'Bagel Fat One', cursive;
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color:#8b0000;
+
+        width: 60vw;
         height: 95%;
       }
 
-      .encabezadotitulo{ display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color:#a04f4f;
-        margin: 25px;
-      }
 
 
 
-footer {background-color: #a04f4f;
-    padding: 30px;
-      margin: 50px;
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-      }
 
  .encabezadoimg{
+   font-family: "tit";
    display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
 }
 
+.image{
+  font-family: "tit";
+  background-color: #cd6e6e;
+  display: flex; justify-content:center;
+  margin:
+}
+.imgpiza{
+width: 35%;
+}
+
+
+
   .encabezadoingredientes{
+    font-family: "tit";
     display: flex; justify-content:center;
     background-color: #cd6e6e;
-  padding: 30px;
-    margin: 50px;
+
       width: 25%;
+        font-size: 95%;
       }
 
-    .encabezadopreparacion{display:flex;
+    .encabezadopreparacion{
+      font-family: "tit";
+      display:flex;
+      justify-content: center;
       background-color: #cd6e6e;
-       padding: 30px;
-        margin: 50px;
-          width: 25%;
 
+          width: 25%;
+  font-size: 95%;
           }
 
-      .encabezadovideos{display: flex;
+      .encabezadovideos{
+        font-family: "tit";
+        display: flex;
         flex-direction:center;
 justify-content: center;
         background-color: #cd6e6e;
-          padding: 30px;
-            margin: 5px;
               width: 35%;
+              font-size: 95%;
               }
 
         .encabezadomaps{
           display: flex;
           justify-content: center;
+          font-family: "tit";
+          margin: 3%;
+          width: 60%;
               }
+              footer {
+                      margin: 3%;
+                      width: 45%;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: space-around;
+                      font-size: 90%;
+                      }
 
 
 
                 .encabezadodirecciones{
                   display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-around;
+                  flex-direction: column;
+                  justify-content: center;
                   background-color: #cd6e6e;
-                     padding: 30px;
-                      margin: 50px;
-                        width: 25%;
+                  margin: 5vw;
+                  width: 15%;
                 }
