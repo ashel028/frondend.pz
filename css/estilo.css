@@ -20,6 +20,15 @@ body {
     background: white url(log.gif)
     no.repeat fixed 50% 50%;
   }
+  @media(max-width: 700px){
+    body {
+      background: rgb(251,0,0);
+      background:#af5d4a;
+      background-position:center;
+       display: list-item;
+       justify-content: center;
+    }
+  }
 
  header {
       display: flex;
@@ -41,20 +50,6 @@ body {
         format("truetype");
       }
 
-      @media (min-width:700px)
-      {
-      .ocultovideos{
-    display: none;
-
-  }
-}
-
-@media(max-width: 700px){
-  body {
-    background: rgb(251,0,0);
-    background:#af5d4a;
-  }
-}
 
 
       a { transition: font-size 0.3s;
@@ -89,10 +84,20 @@ body {
         justify-content: space-around;
         background-color:#8b0000;
         border-radius: 45%;
-
-
         width: 60vw;
         height: 95%;
+      }
+      @media (max-width:700px){
+        .encabezadotitulo{
+          font-family: 'Bagel Fat One', cursive;
+           display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          background-color:#900C3F;
+          width: 95%;
+
+        }
       }
 
       nav { background-color: #fad3b2;
@@ -138,6 +143,17 @@ width: 25%;
         font-size: 95%;
       }
 
+      @media (max-width:700px) {
+        .encabezadoingredientes{
+          font-family: "tit";
+          display: flex; justify-content:center;
+          background-color: #FF8C00;
+          border-top: 30%;
+            width: 45%;
+              font-size: 95%;
+        }
+      }
+
     .encabezadopreparacion{
       font-family: "tit";
       display:flex;
@@ -146,6 +162,17 @@ width: 25%;
       border-top: 30%;
           width: 25%;
   font-size: 95%;
+          }
+
+          @media (max-width:700px) {
+            .encabezadopreparacion{
+              font-family: "tit";
+              display: flex; justify-content:center;
+              background-color: #FF8C00;
+              border-top: 30%;
+                width: 45%;
+                  font-size: 95%;
+            }
           }
 
       .encabezadovideos{
@@ -158,13 +185,45 @@ width: 25%;
               font-size: 95%;
               }
 
+              @media (max-width:700px) {
+                .encabezadovideos{
+                  font-family: "tit";
+                  display: flex; justify-content:center;
+                  background-color: #FF8C00;
+                  border-top: 30%;
+                    width: 45%;
+                      font-size: 95%;
+                }
+              }
+
+              .encabezadovideo{
+                background-color:#fad3b2 ;
+           margin-top: 5vw;
+           margin-bottom: 2vh;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           flex-wrap: wrap;
+           padding: 4em;
+           border-radius: 10%;
+              }
+
+              @media (max-width:700px) {
+                .encabezadovideo{
+                  display:none; 
+
+                }
+                }
+
         .encabezadomaps{
           display: flex;
           justify-content: center;
           font-family: "tit";
           margin: 3%;
-          width: 60%;
+          width: 80%;
               }
+
+
               .redes2{
               display: flex;
   justify-content: space-around;
@@ -175,7 +234,7 @@ width: 25%;
   border: 4px solid #fad3b2;
   background-color: aliceblue;
   border-radius: 50%;
-  border-top: 40vw
+  border-top: 40vw;
   margin: 25px;
   padding: 45px;
 }
@@ -193,11 +252,17 @@ width: 25%;
            border-radius: 10%;
                 }
 
-                .face{
+                @media (max-width:700px) {
+                  footer{
+                    background-color:#FF8C00 ;
 
-
-                }
-
+               display: flex;
+               justify-content:center;
+               padding: 2em;
+                 width: 75%;
+               border-radius: 10%;
+                      }
+                  }
 
                 .whatsapp {
                   position: fixed;
