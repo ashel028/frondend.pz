@@ -83,33 +83,38 @@ body {
         align-items: center;
         justify-content: space-around;
         background-color:#8b0000;
-        border-radius: 45%;
+        border-radius: 25%;
         width: 60vw;
         height: 95%;
       }
       @media (max-width:700px){
         .encabezadotitulo{
-          font-family: 'Bagel Fat One', cursive;
-           display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
+          font-family: 'Bagel Fat One',cursive;
+           display: flex:table-row-group;
+          justify-content: center;
           background-color:#900C3F;
+          border-style: solid;
+          padding: 5%;
           width: 95%;
+          border-radius:25%;
 
         }
       }
 
       nav { background-color: #fad3b2;
+            font-family: 'Bagel Fat One',cursive;
             margin: 0.8vw;
             display: flex;
-            border-radius: 50%;
+            border-radius: 20%;
+
       }
 
       .encabezadodirecciones {color: inherit;
                 display: flex;
                 justify-content: space-around;
-                padding: 1vw;
+                padding: 5%;
+                border-radius: 20%;
+                border-style: solid;
               }
 
 
@@ -120,13 +125,15 @@ body {
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
+
 }
 
 .image{
   font-family: "tit";
   background-color: #fad3b2;
   display: flex; justify-content:center;
-  margin:
+  border-style: solid;
+  border-color: white;
 }
 .imgpiza{
 width: 25%;
@@ -141,6 +148,8 @@ width: 25%;
     border-top: 30%;
       width: 25%;
         font-size: 95%;
+        border-style: solid;
+        border-color: white;
       }
 
       @media (max-width:700px) {
@@ -151,6 +160,8 @@ width: 25%;
           border-top: 30%;
             width: 45%;
               font-size: 95%;
+              border-style: solid;
+              border-color: white;
         }
       }
 
@@ -160,8 +171,10 @@ width: 25%;
       justify-content: center;
       background-color: #cd6e6e;
       border-top: 30%;
-          width: 25%;
-  font-size: 95%;
+      width: 25%;
+      font-size: 95%;
+      border-style: solid;
+      border-color: white;
           }
 
           @media (max-width:700px) {
@@ -170,8 +183,10 @@ width: 25%;
               display: flex; justify-content:center;
               background-color: #FF8C00;
               border-top: 30%;
-                width: 45%;
-                  font-size: 95%;
+              width: 45%;
+              font-size: 95%;
+              border-style: solid;
+              border-color: white;
             }
           }
 
@@ -181,32 +196,34 @@ width: 25%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-              width: 50%;
-              font-size: 95%;
+        width: 50%;
+        font-size: 95%;
+        border-style: solid;
+        border-color: white;
+              }
+
+
+              @media (max-width:700px) {
+                .encabezadovideos{
+                  display: none;
+
+                }
+
               }
 
               .p{
                 background-color:#8b0000 ;
+                display: flex;
+                justify-content: center;
               }
 
-              @media (max-width:700px) {
-                .encabezadovideos{
-                  font-family: "tit";
-                  display: flex; justify-content:center;
-                  background-color: #FF8C00;
-                  border-top: 30%;
-                    width: 45%;
-                      font-size: 95%;
-                }
-              }
 
               .encabezadovideo{
            display: flex;
            justify-content: space-between;
-           align-items: center;
            flex-wrap: wrap;
            padding: 4em;
-           border-radius: 10%;
+
               }
 
               @media (max-width:700px) {
@@ -222,7 +239,18 @@ width: 25%;
           font-family: "tit";
           margin: 3%;
           width: 80%;
+          flex-wrap: wrap;
               }
+
+              @media (max-width:700px) {
+                .encabezadomaps{
+                  display: flex;
+                  justify-content: flex-start;
+                  font-family: "tit";
+                  flex-wrap: wrap;
+                  }
+                }
+
 
 
               .redes2{
@@ -238,31 +266,29 @@ width: 25%;
   border-top: 40vw;
   margin: 25px;
   padding: 45px;
+  flex-wrap: wrap;
 }
 
 
               footer {
                 background-color:#fad3b2 ;
-           margin-top: 15vw;
+           margin-top: 2vw;
            margin-bottom: 10vh;
            display: flex;
            justify-content: space-between;
            align-items: center;
            flex-wrap: wrap;
-           padding: 4em;
+           padding: 1em;
            border-radius: 10%;
                 }
 
                 @media (max-width:700px) {
                   footer{
-                    background-color:#FF8C00 ;
-
                display: flex;
                justify-content:center;
-               padding: 2em;
+               margin: 10%;
                  width: 75%;
-               border-radius: 10%;
-                      }
+               flex-wrap: wrap;   }
                   }
 
                 .whatsapp {
