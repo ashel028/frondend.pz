@@ -1,5 +1,5 @@
 
-li{color:silver;
+li{color:white;
 font-family: "apple";
 }
 .colors {color:silver;}
@@ -23,12 +23,35 @@ body {
   @media(max-width: 700px){
     body {
       background: rgb(251,0,0);
-      background:#af5d4a;
+      background:#CD6155 ;
       background-position:center;
        display: list-item;
        justify-content: center;
     }
   }
+
+
+  .modoNocheBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.modoNocheBtn.active i {
+    color: yellow;
+}
+
+/* Estilos para el modo noche */
+.modo-noche {
+  background: black;
+  color: #4C61A7;
+
+}
+
 
  header {
       display: flex;
@@ -68,7 +91,7 @@ body {
 
       .encabezadologo{
         font-family: "tit";
-        background-color: #8b0000;
+        background-color: #637DA8;
         display: flex;
         justify-content: center;
         width: 25%;
@@ -82,52 +105,60 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        background-color:#8b0000;
+        background-color:#6D0D00 ;
         border-radius: 25%;
         width: 60vw;
         height: 95%;
       }
       @media (max-width:700px){
-        .encabezadotitulo{
-          font-family: 'Bagel Fat One',cursive;
-           display: flex:table-row-group;
-          justify-content: center;
-          background-color:#900C3F;
-          border-style: solid;
-          padding: 5%;
-          width: 95%;
-          border-radius:25%;
-
+        .encabezadotitulo{ display: none;
         }
       }
 
-      nav { background-color: #fad3b2;
+      nav { background-color:#6D0D00 ;
             font-family: 'Bagel Fat One',cursive;
-            margin: 0.8vw;
+            margin: 5vw;
+            padding: 10vw;
             display: flex;
             border-radius: 20%;
-
+            border-color: #6D0D00;
       }
+
 
 
 
       .encabezadodirecciones {color: inherit;
-                display: flex;
-                justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
                 padding: 5%;
                 border-radius: 20%;
                 border-style: solid;
+                border-color: #6D0D00;
               }
 
 
               .hpizza{
-                background-color:#fad3b2;
+                background-color:#30353D ;
                 display: flex;
-                justify-content: space-around;
-                padding: 2%;
+                justify-content: center;
+                padding: 5%;
                 border-radius: 40%;
                 border-style: solid;
+                border-color: #6D0D00;
               }
+
+              @media (max-width:700px)
+              { .hpizza{
+                background-color: #34495E  ;
+                display: flex;
+                justify-content: center;
+                padding: 5%;
+                border-color: #6D0D00;
+                border-radius: 0%;
+                border-style: solid;
+              }
+            }
 
 
  .encabezadoimg{
@@ -141,10 +172,10 @@ body {
 
 .image{
   font-family: "tit";
-  background-color: #fad3b2;
+  background-color:  #34495E ;
   display: flex; justify-content:center;
   border-style: solid;
-  border-color: white;
+  border-color: #6D0D00;
 }
 .imgpiza{
 width: 25%;
@@ -160,11 +191,19 @@ padding: 10%;
 }
 
 .row{
-  background-color: #fad3b2;
+  background-color: #30353D ;
   display: flex;
   justify-content: space-around;
+}
 
-
+.card{
+  border: #1F618D;
+  border-width: 5px;
+}
+.card-title{
+  text-align: center;
+  color: #1F618D;
+  font-size: 32px;
 }
 
 
@@ -172,12 +211,12 @@ padding: 10%;
   .encabezadoingredientes{
     font-family: "tit";
     display: flex; justify-content:center;
-    background-color: #cd6e6e;
+    background-color: #30353D ;
     border-top: 30%;
       width: 25%;
         font-size: 95%;
         border-style: solid;
-        border-color: white;
+        border-color: #6D0D00;
         margin-top: 10%;
       }
 
@@ -185,12 +224,12 @@ padding: 10%;
         .encabezadoingredientes{
           font-family: "tit";
           display: flex; justify-content:center;
-          background-color: #FF8C00;
+          background-color: #34495E  ;
           border-top: 30%;
             width: 45%;
               font-size: 95%;
               border-style: solid;
-              border-color: white;
+              border-color: #CD4D5A;
         }
       }
 
@@ -198,29 +237,29 @@ padding: 10%;
       font-family: "tit";
       display:flex;
       justify-content: center;
-      background-color: #cd6e6e;
+      background-color: #30353D ;
       border-top: 30%;
       width: 25%;
       font-size: 95%;
       border-style: solid;
-      border-color: white;
+      border-color: #6D0D00;
           }
 
           @media (max-width:700px) {
             .encabezadopreparacion{
               font-family: "tit";
               display: flex; justify-content:center;
-              background-color: #FF8C00;
+              background-color: #34495E  ;
               border-top: 30%;
               width: 45%;
               font-size: 95%;
               border-style: solid;
-              border-color: white;
+              border-color:#CD4D5A;
             }
           }
 
       .encabezadovideos{
-        background:#cd6e6e;
+        background:#30353D;
         font-family: "tit";
         display: flex;
         justify-content: space-around;
@@ -228,7 +267,7 @@ padding: 10%;
         width: 50%;
         font-size: 95%;
         border-style: solid;
-        border-color: white;
+        border-color: #6D0D00;
               }
 
 
@@ -297,7 +336,7 @@ padding: 10%;
 
 
               footer {
-                background-color:#fad3b2 ;
+                background-color:#30353D  ;
            margin-top: 2vw;
            margin-bottom: 10vh;
            display: flex;
@@ -319,9 +358,10 @@ padding: 10%;
                   }
 
                 .whatsapp {
+                  word-wrap: 3vw;
                   position: fixed;
-                  bottom: 2vw;
-                  right: 1vh;
+                  bottom: 5vw;
+                  right: 3vh;
                   z-index: 9999;
                   font-size: 30%
                       }
