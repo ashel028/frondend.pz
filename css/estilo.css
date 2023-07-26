@@ -30,6 +30,15 @@ body {
     }
   }
 
+  .barra{
+
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 1vh;
+    z-index: 6000;
+    font-size:100%;
+  }
 
   .modoNocheBtn {
   position: fixed;
