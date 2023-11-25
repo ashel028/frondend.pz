@@ -58,32 +58,38 @@ if ($conn->connect_error) {
     die("Error de conexión a la base de datos: " . $conn->connect_error);
 }
 
-$products = [
-    ['id' => 1, 'name' => 'Camiseta Nike', 'price' => 25.00, 'image'=> 'nike-shirt.jpg'],
-    ['id' => 2, 'name' => 'Pantalones Nike', 'price' => 40.00, 'image' => 'nike-pants.jpg'],
-    ['id' => 3, 'name' => 'Zapatillas Nike', 'price' => 150.00, 'image' => 'nike-shoes.jpg'],
-    ['id' => 4, 'name' => 'Sudadera Nike', 'price' => 80.00, 'image' => 'nike-sweatshirt.jpg'],
-    ['id' => 5, 'name' => 'Calcetines Nike', 'price' => 5.00, 'image' => 'nike-socks.jpg'],
-    ['id' => 6, 'name' => 'Chaqueta Nike', 'price' => 120.00, 'image' => 'nike-jacket.jpg'],
-    // Puedes agregar más productos según sea necesario
-];
+// Recuperar productos de la base de datos
+$sql = "SELECT * FROM producto";
+$result = $conn->query($sql);
 
-foreach ($products as $product) {
-    // Escapar variables para evitar inyección SQL (no recomendado para un entorno de producción real)
-    $productId = $conn->real_escape_string($product['id']);
-    $productName = $conn->real_escape_string($product['name']);
-    $productPrice = $conn->real_escape_string($product['price']);
+if ($result->num_rows > 0) {
+    // Guardar los productos en un array
+    $products = [];
+    while ($row = $result->fetch_assoc()) {
+        $products[] = $row;
+    }
 
-    echo "<div class='product'>";
-    echo "<img src='images/{$product['image']}' alt='{$product['name']}'><br>";
-    echo "<h3>{$product['name']}</h3>";
-    echo "<p>Precio: $ {$product['price']}</p>";
-    echo "<a href='#' class='btn' onclick='addToCart({$productId})'>Agregar al carrito</a>";
-    echo "<a href='finalizar_compra.php?product_id={$productId}' class='btn btn-buy'>Comprar</a>";
-    echo "</div>";
+    // Mostrar los productos
+    foreach ($products as $product) {
+        $productId = $conn->real_escape_string($product['id']);
+        $productName = $conn->real_escape_string($product['nombre']);
+        $productName = $conn->real_escape_string($product['tipo']);
+        $productPrice = $conn->real_escape_string($product['precio']);
+
+        echo "<div class='product'>";
+        echo "<h3>{$product['nombre']}</h3>";
+        echo "<p>Tipo: {$product['tipo']}</p>";
+        echo "<p>Precio: $ {$product['precio']}</p>";
+        echo "<a href='#' class='btn' onclick='addToCart({$productId})'>Agregar al carrito</a>";
+        echo "<a href='finalizar_compra.php?product_id={$productId}' class='btn btn-buy'>Comprar</a>";
+        echo "</div>";
+    }
+} else {
+    echo "No hay productos en la base de datos.";
 }
-?>
 
+$conn->close();
+?>
 <script>
     function addToCart(productId) {
         alert("Producto agregado al carrito: " + productId);
